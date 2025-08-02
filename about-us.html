@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noorcapital</title>
+     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (optional) -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"   />
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A56DB',
+                        secondary: '#F59E0B',
+                    },
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                    screens: {
+                        '2xl': '1545px' // You can change this value as needed
+                    },
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="  font-roboto">
+    <!-- Embed header here -->
+    <div id="header-container"></div>
+    <main>
+        <section id="about-banner">
+            <div class="w-full bg-cover bg-center" style="background-image: url('./assets/img/bg-banner-about.png');">
+                <div class="banner-head container2 px-5 sm:px-0">
+                    <div>
+                        <h1
+                            class="text-[28px] fadeUp sm:text-[36px] md:text-[40px] xl:text-[53px] leading-[42px] md:leading-[46px] xl:leading-[63px] text-center sm:text-start font-black no-gap-letter">
+                            About Us</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about"
+            class="bg-[url('./assets/img/bg-banner-about-blog.png')] w-full bg-cover 2xl:pt-[64px] md:pt-[48px] pt-[36px] pb-[48px] 2xl:pb-[64px] portfolio">
+            <div class="container2 ">
+                <div class="2xl:min-h-[60px] min-h-[42px]  h-full">
+                    <div id="stickyDiv" class="flex justify-center w-full transition-all duration-300 ease-in-out   ">
+                        <div class=" product-tabs-container">
+                            <div class="sticky_tab_wrapper">
+                                <div class="flex md:gap-6.5 gap-2 2xl:p-[7px] p-1 product-tabs">
+                                    <a href="#about"
+                                        class="2xl:px-5 px-3 2xl:py-2.5 py-1 text-[13px] md:text-[13px] 2xl:text-[15px] font-[400] rounded-[4px] text-white cursor-pointer hover:bg-[#284168] hover:text-cream-foreground transition-all whitespace-nowrap duration-500 bg-act text-cream-foreground regular-font">
+                                        About
+                                    </a>
+
+                                    <a href="#noorcapital"
+                                        class="2xl:px-5 px-3 2xl:py-2.5 py-1 text-[13px] md:text-[13px] 2xl:text-[15px] font-[400] rounded-[4px] text-white cursor-pointer hover:bg-[#284168] hover:text-cream-foreground transition-all whitespace-nowrap duration-500 light-font">
+                                        Why Noor Capital
+                                    </a>
+
+                                    <a href="#license_and_regulations"
+                                        class="2xl:px-5 px-3 2xl:py-2.5 py-1 text-[13px] md:text-[13px] 2xl:text-[15px] font-[400] rounded-[4px] text-white cursor-pointer hover:bg-[#284168] hover:text-cream-foreground transition-all whitespace-nowrap duration-500 light-font">
+                                        License & Regulations
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[50px] mt:pt-[70px] 2xl:pt-[110px]">
+                <div
+                    class="flex xl:flex-row flex-col gap-[40px] md:gap-[50px] 2xl:gap-[70px] items-center   container2 px-5 md:px-0">
+                    <div
+                        class="relative w-[350px] h-[425px] md:w-[400px] md:h-[410px] 2xl:min-w-[483px] 2xl:h-[545px] rounded-[15px] 2xl:rounded-[30px] overflow-hidden grad_border_about">
+                        <img alt="invest" loading="lazy" decoding="async" data-nimg="fill"
+                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent"
+                            src="./assets/img/about_us_-_Noor_Capital_2.0.original.png">
+                    </div>
+
+                    <div class="flex flex-col gap-[15px] 2xl:gap-[24px] w-[100%] lg:w-[65%] lg:max-w-[898px]">
+                        <div style="opacity: 1; transform: none;">
+                            <h3
+                                class="gradiant-title text-center md:text-start text-[28px] md:text-[35px] 2xl:text-[45px] font-black no-gap-letter inline-block leading-[111%] ">
+                                Comprehensive Solutions for your Investments</h3>
+                        </div>
+                        <div
+                            class="text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp desc html-content flex flex-col gap-[15px] 2xl:gap-[15px] leading-[22px] 2xl:leading-[24px]">
+                            <p data-block-key="rg4ds">Noor Capital P.S.C. is one of the leading investment brokerage
+                                firms known across the globe for its high standards in terms of service quality and
+                                customer satisfaction. Our state-of-art highly efficient trading platforms provide
+                                wonderful trading experience for our individual and corporate clients.<br></p>
+                            <p data-block-key="3f36t">Established in 2005 and regulated by the Securities and
+                                Commodities Authority (SCA), Noor Capital P.S.C. offers you a diverse range of premium
+                                financial services and investment plans. All our financial services are catered to meet
+                                your specific trading and investment needs.<br></p>
+                            <p data-block-key="essft">Noor Capital P.S.C. is registered as a private joint-stock company
+                                in Abu Dhabi Department of Economic Development. Being regulated by the Securities and
+                                Commodities Authority (SCA) makes us an your best choice ever for all your financial and
+                                investment endeavors.<br></p>
+                            <p data-block-key="2gt89">At Noor Capital P.S.C., we strive to provide our customers with
+                                the most reliable, advanced, financial solutions especially tailored to our clients and
+                                reflect their goals, equip them by the amount of financial security needed to better
+                                future. Our customer-oriented approach makes your satisfaction our top priority. You can
+                                count on us to provide you with the best financial and investment management services.
+                            </p>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <div class="flex gap-[10px]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section style="background-image: url('./assets/img/section-banner-2.png');"
+            class="  bg_top  2xl:pt-[105px] md:pt-[70px] pt-[50px] 2xl:pt-[64px] pt-[48px] 2xl:pb-[120px] md:pb-[80px] pb-[60px] bg-cover w-full relative">
+            <div class="container2  flex flex-col justify-center items-center gap-10 2xl:gap-15 ">
+                <div class=" px-5 sm:px-0">
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 hm_collab">
+                        <div class="filter-tab-container flex justify-center p-[1px]">
+                            <div class="bg-[#091830] py-9 px-5 rounded-[20px] w-full h-full collab_card">
+                                <div class="flex flex-col gap-5 md:gap-[20px] 2xl:gap-[32px]">
+                                    <div class="collab_icon relative mb-[5px] ] w-[70px] h-[70px]"><img alt="icon"
+                                            loading="lazy" decoding="async" data-nimg="fill"
+                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                            src="./assets/img/goal-1.gif"></div>
+                                    <div style="opacity: 1; transform: none;">
+                                        <h2
+                                            class="fadeUp text-[20px] leading-[20px] 2xl:text-[28px] 2xl:mt-2 2xl:leading-[32px] text-[#fff] !font-medium">
+                                            Vision</h2>
+                                    </div>
+                                    <div style="opacity: 1; transform: none;">
+                                        <div
+                                            class="text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp html-content  2xl:leading-[24px] leading-[22px]">
+                                            <p data-block-key="zzruo">Our vision is to be the most trusted and leading
+                                                investment firm in the GCC by 2025 and to be the most preferred one in
+                                                the Middle East by 2030.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-tab-container flex justify-center p-[1px]">
+                            <div class="bg-[#091830] py-9 px-5 rounded-[20px] w-full h-full collab_card">
+                                <div class="flex flex-col gap-5 md:gap-[20px] 2xl:gap-[32px]">
+                                    <div class="collab_icon relative mb-[5px] ] w-[70px] h-[70px]"><img alt="icon"
+                                            loading="lazy" decoding="async" data-nimg="fill"
+                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                            src="./assets/img/goal-2.gif"></div>
+                                    <div style="opacity: 1; transform: none;">
+                                        <h2
+                                            class="fadeUp text-[20px] leading-[20px] 2xl:text-[28px] 2xl:mt-2 2xl:leading-[32px] text-[#fff] !font-medium">
+                                            Mission</h2>
+                                    </div>
+                                    <div style="opacity: 1; transform: none;">
+                                        <div
+                                            class="text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp html-content  2xl:leading-[24px] leading-[22px]">
+                                            <p data-block-key="25uop">Our mission is to create wealth for our clients
+                                                and shareholders by providing creative investment solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-tab-container flex justify-center p-[1px]">
+                            <div class="bg-[#091830] py-9 px-5 rounded-[20px] w-full h-full collab_card">
+                                <div class="flex flex-col gap-5 md:gap-[20px] 2xl:gap-[32px]">
+                                    <div class="collab_icon relative mb-[5px] ] w-[70px] h-[70px]"><img alt="icon"
+                                            loading="lazy" decoding="async" data-nimg="fill"
+                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                            src="./assets/img/goal-3.gif"></div>
+                                    <div style="opacity: 1; transform: none;">
+                                        <h2
+                                            class="fadeUp text-[20px] leading-[20px] 2xl:text-[28px] 2xl:mt-2 2xl:leading-[32px] text-[#fff] !font-medium">
+                                            Objectives</h2>
+                                    </div>
+                                    <div style="opacity: 1; transform: none;">
+                                        <div
+                                            class="text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp html-content  2xl:leading-[24px] leading-[22px]">
+                                            <p data-block-key="25uop">To be distinguished by creative products and
+                                                high-quality services. To grow the business and the true value of the
+                                                company by at least 35% within the next 5 years. To create value for
+                                                current shareholders by sustaining a significant gain in company value.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section style="background-image: url('./assets/img/key-feat.png');"
+            class="   2xl:pt-[110px] md:pt-[75px] pt-[50px] 2xl:pb-[120px] md:pb-[80px] pb-[60px] w-full px-5 md:px-0 bg-center bg-cover bg-no-repeat">
+            <div class="container2 flex flex-col items-center justify-center gap-5 md:gap-9 2xl:gap-15 ">
+                <div style="opacity: 1; transform: none;">
+                    <h2
+                        class="text-[28px] fadeUp leading-[32px] md:text-[34px] md:leading-[40px] 2xl:text-[45px] 2xl:leading-[70px] gradiant-title">
+                        Core Values</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-14 w-full">
+                    <div
+                        class="flex flex-col items-center gap-2 md:gap-4 2xl:gap-10 2xl:min-w-[455px] md:min-w-[320px] ">
+                        <div style="opacity: 1; transform: none;">
+                            <div class="w-[40px] md:w-[50px] 2xl:w-[70px]  relative"><img alt="icon" loading="lazy"
+                                    width="100" height="100" decoding="async" data-nimg="1" class="w-full h-full "
+                                    style="color:transparent" src="./assets/img/Relationship_fqdUe9S.gif">
+                            </div>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <h2
+                                class="text-[17px] text-center leading-[28px] fadeUp 2xl:text-[22px] md:leading-[38px] text-[#fff] !font-medium">
+                                Relationships as Foundation</h2>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <div
+                                class="html-content text-[14px] md:text-[14px] 2xl:text-[18px] fadeUp 2xl:leading-[30px] leading-normal text-center text-white no-gap-letter">
+                                <p data-block-key="19jh6">We will constantly strive to identify opportunities for new
+                                    relationships and strengthen existing relationships with all our stakeholders.
+                                    Relationships would form the bedrock of all our business activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col items-center gap-2 md:gap-4 2xl:gap-10 2xl:min-w-[455px] md:min-w-[320px] ">
+                        <div style="opacity: 1; transform: none;">
+                            <div class="w-[40px] md:w-[50px] 2xl:w-[70px]  relative"><img alt="icon" loading="lazy"
+                                    width="100" height="100" decoding="async" data-nimg="1" class="w-full h-full "
+                                    style="color:transparent"
+                                    src="./assets/img/World-Creativity-and-Innovation-Day.gif">
+                            </div>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <h2
+                                class="text-[17px] text-center leading-[28px] fadeUp 2xl:text-[22px] md:leading-[38px] text-[#fff] !font-medium">
+                                Innovation</h2>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <div
+                                class="html-content text-[14px] md:text-[14px] 2xl:text-[18px] fadeUp 2xl:leading-[30px] leading-normal text-center text-white no-gap-letter">
+                                <p data-block-key="v4uvy">We will endeavor to create new opportunities through constant
+                                    innovation in all areas of our work. People who work with us will be constantly
+                                    encouraged to challenge the status quo and demonstrate creativity in everything we
+                                    do.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col items-center gap-2 md:gap-4 2xl:gap-10 2xl:min-w-[455px] md:min-w-[320px] ">
+                        <div style="opacity: 1; transform: none;">
+                            <div class="w-[40px] md:w-[50px] 2xl:w-[70px]  relative"><img alt="icon" loading="lazy"
+                                    width="100" height="100" decoding="async" data-nimg="1" class="w-full h-full "
+                                    style="color:transparent" src="./assets/img/feedback_7TGsL74.gif"></div>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <h2
+                                class="text-[17px] text-center leading-[28px] fadeUp 2xl:text-[22px] md:leading-[38px] text-[#fff] !font-medium">
+                                Trust</h2>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <div
+                                class="html-content text-[14px] md:text-[14px] 2xl:text-[18px] fadeUp 2xl:leading-[30px] leading-normal text-center text-white no-gap-letter">
+                                <p data-block-key="v4uvy">We greatly respect the trust placed in us by all our
+                                    stakeholders. We, as an organization, will display utmost integrity and continuously
+                                    enhance this trust in every way that we conduct our business.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col items-center gap-2 md:gap-4 2xl:gap-10 2xl:min-w-[455px] md:min-w-[320px] ">
+                        <div style="opacity: 1; transform: none;">
+                            <div class="w-[40px] md:w-[50px] 2xl:w-[70px]  relative"><img alt="icon" loading="lazy"
+                                    width="100" height="100" decoding="async" data-nimg="1" class="w-full h-full "
+                                    style="color:transparent" src="./assets/img/Idea_MwX0pkP.gif"></div>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <h2
+                                class="text-[17px] text-center leading-[28px] fadeUp 2xl:text-[22px] md:leading-[38px] text-[#fff] !font-medium">
+                                Teamwork</h2>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <div
+                                class="html-content text-[14px] md:text-[14px] 2xl:text-[18px] fadeUp 2xl:leading-[30px] leading-normal text-center text-white no-gap-letter">
+                                <p data-block-key="v4uvy">We place high premium on teamwork as the way of doing business
+                                    and will therefore, constantly team up with clients, business partners and employees
+                                    to achieve common goals and rewards for all.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col items-center gap-2 md:gap-4 2xl:gap-10 2xl:min-w-[455px] md:min-w-[320px] ">
+                        <div style="opacity: 1; transform: none;">
+                            <div class="w-[40px] md:w-[50px] 2xl:w-[70px]  relative"><img alt="icon" loading="lazy"
+                                    width="100" height="100" decoding="async" data-nimg="1" class="w-full h-full "
+                                    style="color:transparent" src="./assets/img/Support_fVRNcGU.gif"></div>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <h2
+                                class="text-[17px] text-center leading-[28px] fadeUp 2xl:text-[22px] md:leading-[38px] text-[#fff] !font-medium">
+                                Support and Knowledge</h2>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <div
+                                class="html-content text-[14px] md:text-[14px] 2xl:text-[18px] fadeUp 2xl:leading-[30px] leading-normal text-center text-white no-gap-letter">
+                                <p data-block-key="v4uvy">Noor Capital works tirelessly towards protecting our investors
+                                    from making common mistakes. We provide our clients with robust tools, technical
+                                    analysis, and economic reports to help them make the correct decision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col items-center gap-2 md:gap-4 2xl:gap-10 2xl:min-w-[455px] md:min-w-[320px] ">
+                        <div style="opacity: 1; transform: none;">
+                            <div class="w-[40px] md:w-[50px] 2xl:w-[70px]  relative"><img alt="icon" loading="lazy"
+                                    width="100" height="100" decoding="async" data-nimg="1" class="w-full h-full "
+                                    style="color:transparent" src="./assets/img/Influencer.gif"></div>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <h2
+                                class="text-[17px] text-center leading-[28px] fadeUp 2xl:text-[22px] md:leading-[38px] text-[#fff] !font-medium">
+                                Social Responsibility</h2>
+                        </div>
+                        <div style="opacity: 1; transform: none;">
+                            <div
+                                class="html-content text-[14px] md:text-[14px] 2xl:text-[18px] fadeUp 2xl:leading-[30px] leading-normal text-center text-white no-gap-letter">
+                                <p data-block-key="v4uvy">We will constantly look for opportunities to contribute to the
+                                    economic development and improvement in the quality of life of our stakeholders as
+                                    well as that of the society at large.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="noorcapital" style="background-image: url('./assets/img/main-banner.png');"
+            class="   2xl:pt-[110px] md:pt-[75px] pt-[50px] 2xl:pb-[120px] md:pb-[80px] pb-[60px] w-full bg-cover bg-center relative why_choose_sec px-5 md:px-0 scroll_top">
+            <div class="container2">
+                <div class="text-center flex flex-col items-center">
+                    <div style="opacity: 1; transform: none;">
+                        <h2
+                            class="font-bold fadeUp lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[630px] why-choose-headings">
+                            Why Noor Capital</h2>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div
+                            class="text-[#ffffff] mt-[10px] text-[13px] leading-[22px] 2xl:text-[16px] 2xl:leading-[24px] desc html-content">
+                            EST 2005, SCA Regulated Investment Firm in UAE</div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid lg:grid-cols-2 grid-cols-1 2xl:gap-[46px] md:gap-[30px] gap-[20px] 2xl:pt-[50px] pt-[40px] why_choose_col">
+                    <div style="opacity: 1; transform: none;">
+                        <div
+                            class="grid  sm:grid-cols-[1fr_auto] lg:grid-cols-2 relative about-border border-1 bg-why-choose justify-between 2xl:p-10 p-8 transition-all duration-500 hover:shadow-3xl ">
+                            <div class="why-choose relative lg:w-auto w-full sm:order-1 order-2 ">
+                                <h4>
+                                    <div class="font-bold text-white transition-all fadeUp duration-500 ">Duly Regulated
+                                    </div>
+                                </h4>
+                                <div
+                                    class="2xl:mt-8 xl:mt-6 mt-3 text-[16] text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp  leading-[22px] 2xl:leading-[24px] desc html-content">
+                                    <p data-block-key="wq257">Established in 2005, Noor Capital P.S.C. is a Private
+                                        Joint Stock Company, regulated by the Department of Economic Development Abu
+                                        Dhabi.</p>
+                                </div>
+                            </div>
+                            <div class=" object-cover why-choose-img sm:order-2 order-1"><img
+                                    src="./assets/img/regulated.original.png" width="260" height="40" alt="img"
+                                    class="footer-screen-img"></div>
+                        </div>
+                    </div>
+
+                    <div style="opacity: 1; transform: none;">
+                        <div
+                            class="grid  sm:grid-cols-[1fr_auto] lg:grid-cols-2 relative about-border border-1 bg-why-choose justify-between 2xl:p-10 p-8 transition-all duration-500 hover:shadow-3xl ">
+                            <div class="why-choose relative lg:w-auto w-full sm:order-1 order-2 ">
+                                <h4>
+                                    <div class="font-bold text-white transition-all fadeUp duration-500 ">Global Access
+                                    </div>
+                                </h4>
+                                <div
+                                    class="2xl:mt-8 xl:mt-6 mt-3 text-[16] text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp  leading-[22px] 2xl:leading-[24px] desc html-content">
+                                    <p data-block-key="ukdyc">Noor Capital gives you global access to its trading
+                                        platform, multiple trading tools, and educational resources - anytime and from
+                                        anywhere.</p>
+                                </div>
+                            </div>
+                            <div class=" object-cover why-choose-img sm:order-2 order-1"><img
+                                    src="./assets/img/global-access.original.png" width="260" height="40" alt="img"
+                                    class="footer-screen-img"></div>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div
+                            class="grid  sm:grid-cols-[1fr_auto] lg:grid-cols-2 relative about-border border-1 bg-why-choose justify-between 2xl:p-10 p-8 transition-all duration-500 hover:shadow-3xl ">
+                            <div class="why-choose relative lg:w-auto w-full sm:order-1 order-2 ">
+                                <h4>
+                                    <div class="font-bold text-white transition-all fadeUp duration-500 ">Multiple
+                                        Financial
+                                        &amp; Investment Solutions</div>
+                                </h4>
+                                <div
+                                    class="2xl:mt-8 xl:mt-6 mt-3 text-[16] text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp  leading-[22px] 2xl:leading-[24px] desc html-content">
+                                    <p data-block-key="ukdyc">Comprehensive financial and investment solutions, expertly
+                                        tailored to your unique needs, designed to help you achieve your goals through
+                                        insightful guidance and strategic planning.</p>
+                                </div>
+                            </div>
+                            <div class=" object-cover why-choose-img sm:order-2 order-1"><img
+                                    src="./assets/img/solutions.original.png" width="260" height="40" alt="img"
+                                    class="footer-screen-img"></div>
+                        </div>
+                    </div>
+
+                    <div style="opacity: 1; transform: none;">
+                        <div
+                            class="grid  sm:grid-cols-[1fr_auto] lg:grid-cols-2 relative about-border border-1 bg-why-choose justify-between 2xl:p-10 p-8 transition-all duration-500 hover:shadow-3xl ">
+                            <div class="why-choose relative lg:w-auto w-full sm:order-1 order-2 ">
+                                <h4>
+                                    <div class="font-bold text-white transition-all fadeUp duration-500 ">Excellent
+                                        Investment
+                                        Advice</div>
+                                </h4>
+                                <div
+                                    class="2xl:mt-8 xl:mt-6 mt-3 text-[16] text-[#ffffff] text-[13px] 2xl:text-[16px] fadeUp  leading-[22px] 2xl:leading-[24px] desc html-content">
+                                    <p data-block-key="ukdyc">Several years of experience and highly certified
+                                        professionals made Noor Capital well equipped to guide you to the right
+                                        investment opportunities, ensuring tailored strategies that maximize returns
+                                        while managing risk and aligning with your financial goals.</p>
+                                </div>
+                            </div>
+                            <div class=" object-cover why-choose-img sm:order-2 order-1"><img
+                                    src="./assets/img/advice.original.png" width="260" height="40" alt="img"
+                                    class="footer-screen-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-image: url('./assets/img/bg-marquee.png');"
+            class=" 2xl:pt-[110px] md:pt-[75px] pt-[50px] 2xl:pb-[120px] md:pb-[80px] pb-[60px]  w-full bg-cover bg-center relative overflow-hidden">
+            <div class="container2 px-5 sm:px-0">
+
+                <div style="opacity: 1; transform: none;">
+                    <div class="flex flex-col items-center 2xl:mb-[80px] mb-[50px]">
+                        <h1
+                            class="2xl:text-[45px] fadeUp md:text-[35px] text-[28px] font-[900] gradiant-title text-center 2xl:max-w-[750px] md:max-w-[60%] 2xl:leading-[60px] md:leading-[40px] leading-[32px] ">
+                            A Global Leader in Investment and Brokerage Services</h1>
+                    </div>
+                </div>
+
+                <div style="opacity: 1; transform: none;">
+                    <div class="marquee mb-[50px]">
+                        <div class="track1" style="transform: translateX(-2403.61px) translateZ(0px);">
+                            <div class="flex items-center">
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white ">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] text-white">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="opacity: 1; transform: none;">
+                    <div class="marquee">
+                        <div class="track2 text-[48px] font-[900] marquee-text">
+                            <div class="flex items-center">
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Instant Execution Through Tier-1 Interbank Liquidity</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Local Deposits and Withdrawals with Reputable UAE Banks</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    Regulated by the Securities and Commodities Authority (SCA)</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                                <h1
+                                    class="w-full text-[24px] 2xl:text-[48px] md:text-[35px] lg:leading-[50px] font-[600] marquee-text min-w-[380px] 2xl:min-w-[750px] md:min-w-[550px] ">
+                                    One of the Leading Investment and Brokerage Firm</h1>
+                                <div
+                                    class="2xl:min-w-[53px] min-w-[40px] 2xl:min-h-[53px] min-h-[40px] mx-[50px] md:mx-[100px]">
+                                    <img alt="" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                        class="w-full h-full" style="color:transparent"
+                                        src="./assets/img/marquee-divider.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-image: url('./assets/img/bg-banner-platform.png');"
+            class=" 2xl:pt-[110px] md:pt-[75px] pt-[50px] 2xl:pb-[120px] md:pb-[80px] pb-[60px] w-full bg-cover bg-center relative scroll_top"
+            id="license_and_regulations">
+            <div class="container2 px-5 sm:px-0">
+                <div style="opacity: 1; transform: none;">
+                    <div class="flex flex-col items-center">
+                        <h1
+                            class="2xl:text-[45px] md:text-[35px] text-[28px] font-black  gradiant-title 2xl:mb-1 leading-normal  text-center">
+                            License &amp; Regulations</h1>
+                        <div
+                            class="html-content 2xl:text-[16px] text-[13px] light-font 2xl:max-w-[684px] max-w-[600px] text-center 2xl:leading-[24px] leading-[22px] mt-[10px]">
+                            <p data-block-key="8md2l">Noor Capital PSC is authorised and regulated&nbsp;by the
+                                Securities and Commodities Authority (SCA) in the United Arab Emirates, we have an
+                                active and functioning license to practice the following activities:</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex lg:flex-row flex-col-reverse  gap-[40px] 2xl:gap-[90px] md:gap-[50px] items-center pt-[50px] md:pt-[54px] lg:pt-[64px] container px-2 lg:px-0 justify-center">
+                    <div class="flex flex-col w-[100%] md:max-w-[50%]">
+                        <ul class="flex flex-col 2xl:gap-[20px] gap-[15px] ">
+                            <div style="opacity: 1; transform: none;">
+                                <li class=" ">
+                                    <div class="flex 2xl:gap-5 gap-3 items-center"><img alt="tick" loading="lazy"
+                                            width="22" height="17" decoding="async" data-nimg="1"
+                                            class="w-[18px] h-[15px] 2xl:w-[22px] 2xl:h-[17px]"
+                                            style="color:transparent" src="./assets/img/green-tick.svg">
+                                        <p class="text-[#ffffff] text-[16px] 2xl:text-[22px] regular-font ">First
+                                            Category: Dealing in Securities (License No: 305028)</p>
+                                    </div>
+                                    <div class="flex 2xl:gap-5 gap-3 items-center ps-[22px]">
+                                        <div
+                                            class=" text-[16] text-[#ffffff] text-[13px] leading-[22px] 2xl:text-[16px] 2xl:leading-[24px] desc html-content sub-list-html">
+                                            <ul>
+                                                <li data-block-key="q6qku">Trading broker in the international markets
+                                                </li>
+                                                <li data-block-key="bv2tb">Trading broker of OTC derivatives and
+                                                    currencies in the spot market</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div style="opacity: 1; transform: none;">
+                                <li class=" ">
+                                    <div class="flex 2xl:gap-5 gap-3 items-center"><img alt="tick" loading="lazy"
+                                            width="22" height="17" decoding="async" data-nimg="1"
+                                            class="w-[18px] h-[15px] 2xl:w-[22px] 2xl:h-[17px]"
+                                            style="color:transparent" src="./assets/img/green-tick.svg">
+                                        <p class="text-[#ffffff] text-[16px] 2xl:text-[22px] regular-font ">Second
+                                            Category: Dealing in Investment (License No: 608023)</p>
+                                    </div>
+                                    <div class="flex 2xl:gap-5 gap-3 items-center ps-[22px]">
+                                        <div
+                                            class=" text-[16] text-[#ffffff] text-[13px] leading-[22px] 2xl:text-[16px] 2xl:leading-[24px] desc html-content sub-list-html">
+                                            <ul>
+                                                <li data-block-key="qxhmk">Investment fund management</li>
+                                                <li data-block-key="5r8h6">Portfolios management</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div style="opacity: 1; transform: none;">
+                                <li class=" ">
+                                    <div class="flex 2xl:gap-5 gap-3 items-center"><img alt="tick" loading="lazy"
+                                            width="22" height="17" decoding="async" data-nimg="1"
+                                            class="w-[18px] h-[15px] 2xl:w-[22px] 2xl:h-[17px]"
+                                            style="color:transparent" src="./assets/img/green-tick.svg">
+                                        <p class="text-[#ffffff] text-[16px] 2xl:text-[22px] regular-font ">Fifth
+                                            Category: Arrangement and Advice (License No: 20200000119)</p>
+                                    </div>
+                                    <div class="flex 2xl:gap-5 gap-3 items-center ps-[22px]">
+                                        <div
+                                            class=" text-[16] text-[#ffffff] text-[13px] leading-[22px] 2xl:text-[16px] 2xl:leading-[24px] desc html-content sub-list-html">
+                                            <ul>
+                                                <li data-block-key="qxhmk">Financial advisor (issuance manager)</li>
+                                                <li data-block-key="6a4bd">Financial consultations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="relative w-full h-[364px] 2xl:w-[676px] 2xl:h-[484px]  md:h-[360px] "><img alt="invest"
+                            loading="lazy" decoding="async" data-nimg="fill" class="rounded-[20px] "
+                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent"
+                            src="./assets/img/content-license-1_-2.0.original.png"></div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-image: url('./assets/img/rectangle.png');"
+            class=" w-full bg-cover bg-center px-5 md:px-0 ">
+            <div
+                class="flex flex-col lg:flex-row 2xl:gap-[50px] lg:gap-[25px] md:gap-[20px] container2 items-stretch lg:items-center justify-between">
+                <div class="flex flex-col gap-[22px] 2xl:gap-[30px] py-10 lg:py-[88px] 2xl:py-[127px]">
+                    <div style="opacity: 1; transform: none;">
+                        <h1
+                            class="gradiant-title text-left text-[28px] leading-[32px] md:text-[35px] md:leading-[45px] 2xl:text-[45px] 2xl:leading-[55px] font-black no-gap-letter">
+                            Start Your Trading Journey with Noor Capital</h1>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div
+                            class="text-[#ffffff] text-[13px]  2xl:text-[16px]  desc html-content trade-block-html flex flex-col gap-[10px] 2xl:gap-[20px] 2xl:leading-[24px] leading-[22px]">
+                            <ul>
+                                <li data-block-key="rycn4">Multiple Financial &amp; Investment Solutions</li>
+                                <li data-block-key="8ndeo">Ultimate and Advanced Trading Platforms</li>
+                                <li data-block-key="3g8ve">Excellent Investment Advice</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-row flex-wrap md:flex-nowrap gap-[15px] items-center">
+                        <div style="opacity: 1; transform: none;"><a class="button_fill_btn_46__iI1_A fill_btn_46"
+                                href="/en/trading/mt4-platform">
+                                <p>Try a Demo</p><svg width="12" height="12" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="arrow_right">
+                                    <path
+                                        d="M0.359375 10.1925L2.3527 12.127L8.15148 6.49932L2.3527 0.87169L0.359375 2.80619L4.16482 6.49932L0.359375 10.1925Z"
+                                        fill="#0C2E6D"></path>
+                                </svg>
+                            </a></div>
+                    </div>
+                </div>
+                <div class=" flex  justify-center lg:justify-start items-end">
+                    <div class="md:h-[350px] xl:h-[430px] 2xl:h-[591px]">
+                        <div class="contact-img-banner md:h-full max-w-unset"><img alt="trading banner" loading="lazy"
+                                width="867" height="591" decoding="async" data-nimg="1" style="color:transparent"
+                                src="./assets/img/Start_your_trading_journey_with_Noor_Capital_Ne.original.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="relative z-[36]" id="backToTopBtn">
+            <div style="opacity: 1; transform: none;">
+                <div
+                    class="absolute top-0 left-0 right-0 bottom-0 m-auto 2xl:w-[90px]  2xl:h-[90px]  md:w-[70px] md:h-[70px] h-[50px] w-[50px] cursor-pointer">
+                    <div
+                        class="relative 2xl:text-[15px] md:text-[12px] text-[11px] light-font h-full card-border card-sub-gradient back-to-top backdrop-blur-[20px] rounded-[50%] group/card layer-card  overflow-hidden flex items-center justify-center text-white flex-col">
+                        <div
+                            class="2xl:w-[30px] 2xl:h-[30px] sm:w-[25px] sm:h-[25px] w-[20px] h-[20px] animation-jumping">
+                            <img alt="arrow top" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                                class="w-full h-full" style="color:transparent" src="./assets/img/arrowUp.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position: fixed; bottom: 90px; right: 20px; z-index: 1000;"><a href="tel:+97142795453"><img
+                    src="https://admin.noorcapital.ae/media/images/noor-capital-phone-call1_yuUrrGG.original.png"
+                    alt="Call us"
+                    style="width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);"></a>
+        </div>
+        <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;"><a
+                href="https://wa.me/971581059349?text=Hi,%20I'm%20interested%20in%20online%20trading.%20Can%20you%20help%20me%20get%20started?"
+                target="_blank"><img
+                    src="https://admin.noorcapital.ae/media/images/noor-capital-whtaspp-icon.original.png"
+                    alt="Chat with us on WhatsApp"
+                    style="width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);"></a>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="lg:pt-[115px] md:pt[75px] pt-[60px] relative bg-footer">
+        <div class="container">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 2xl:gap-x-[95px] xl:gap-x-[70px] lg:x-15 sm:px-0 px-5 lg:gap-y-0 gap-y-10">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <a class="flex items-center gap-1" href="index.html"><img src="./assets/img/footer-logo.png"
+                            width="140" style="max-width: 140px;" height="40" alt="img" /></a>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-base font-semibold footer-head">Company</h3>
+                    <ul class="flex flex-col gap-[8px] pt-[8px] footer-link-screen">
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">About</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Why Noor Capital</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">License &amp; Regulations</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Media Center</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-base font-semibold footer-head">Services</h3>
+                    <ul class="flex flex-col gap-[8px] pt-[8px] footer-link-screen">
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Global Financial Advisory</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Asset Management</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Investment Services</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Fund Administration</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-base font-semibold footer-head">Products</h3>
+                    <ul class="flex flex-col gap-[8px] pt-[8px] footer-link-screen">
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Forex</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Commodities</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Indices</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Energies</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Shares CFDs</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Cash Equities</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-base font-semibold footer-head">Trading</h3>
+                    <ul class="flex flex-col gap-[8px] pt-[8px] footer-link-screen">
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">MT4 Platform</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">MT5 Platform</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">MT4 Web Trader</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">MT5 Web Trader</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Funding &amp; Withdrawals</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Trading Conditions</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-base font-semibold footer-head">Learning Hub</h3>
+                    <ul class="flex flex-col gap-[8px] pt-[8px] footer-link-screen">
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Learn to Invest</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Technical Analysis</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Video Tutorials</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Economic Reports</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Webinars</a></li>
+                        <li><a class="text-[#fff] transition-all duration-500 hover:ml-1 hover:text-[#be811a]"
+                                href="#">Workshops</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col sm:flex-row sm:flex-wrap lg:cols-1 lg:justify-between items-center lg:gap-y-0 gap-y-5 gap-x-5 pt-5 mt-[30px] 2xl:mt-[49px] border-top-gr sm:px-0 border-opacity-20 sm:mx-0 mx-5">
+                <div class="achivements flex justify-center sm:justify-start flex-1 w-2/4 lg:w-auto">
+                    <div class="achive_wrapper">
+                        <div class="swiper footer-swiper achive_swiper_wrapper" dir="ltr">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div>
+                                            <img alt="Award 2019" loading="lazy" width="200" height="183"
+                                                decoding="async" data-nimg="1" style="color: transparent;"
+                                                src="./assets/img/awards_2019.original.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div>
+                                            <img alt="Award 2020" loading="lazy" width="200" height="183"
+                                                decoding="async" data-nimg="1" style="color: transparent;"
+                                                src="./assets/img/award_2020.original.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div>
+                                            <img alt="Award 2019" loading="lazy" width="200" height="183"
+                                                decoding="async" data-nimg="1" style="color: transparent;"
+                                                src="./assets/img/awards_2019.original.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div>
+                                            <img alt="Award 2020" loading="lazy" width="200" height="183"
+                                                decoding="async" data-nimg="1" style="color: transparent;"
+                                                src="./assets/img/award_2020.original.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 sm:w-2/4 lg:w-auto min-w-[200px]">
+                    <ul class="flex items-center justify-center sm:justify-end lg:justify-center gap-7.5 footer-screen-extra text-white wow fadeInRight"
+                        data-wow-delay=".3s">
+                        <a target="_blank" class="" href="#"><img src="./assets/img/fb.png" width="10" height="10"
+                                alt="img" /></a>
+                        <a target="_blank" class="" href="#"><img src="./assets/img/x.png" width="20" height="20"
+                                alt="img" /></a>
+                        <a target="_blank" class="" href="#"><img src="./assets/img/insta.png" width="20" height="20"
+                                alt="img" /></a>
+                        <a target="_blank" class="" href="#"><img src="./assets/img/youtube.png" width="30" height="30"
+                                alt="img" /></a>
+                        <a target="_blank" class="" href="#"><img src="./assets/img/linkdin.png" width="20" height="20"
+                                alt="img" /></a>
+                    </ul>
+                </div>
+                <div class="flex-1 w-full sm:w-2/4 lg:w-auto">
+                    <ul class="flex w-full sm:w-auto flex-wrap sm:flex-nowrap items-center justify-center lg:justify-end col-span-full gap-5 2xl:gap-7.5 footer-screen-extra text-white wow fadeInRight underline underline-offset-2 footer-contact-screen"
+                        data-wow-delay=".3s">
+                        <li><a class="font-footer whitespace-nowrap" href="#">Terms &amp; Condition</a></li>
+                        <li><a class="font-footer whitespace-nowrap" href="#">Privacy Policy</a></li>
+                        <li><a class="font-footer whitespace-nowrap" href="#">Contact Us</a></li>
+                        <li><a class="font-footer whitespace-nowrap" href="#">Fraud Warning</a></li>
+                        <li><a class="font-footer whitespace-nowrap" href="#">Cookies Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-[15px] overflow-x-hidden sm:px-0 px-5">
+                <div
+                    class="flex sm:flex-row flex-col items-center justify-between pt-[15px] pb-[30px] 2xl:pb-[45px] border-opacity-20">
+                    <div class="text-[#ffffff] wow fadeInLeft footer-description html-content" data-wow-delay=".3s">
+                        <p data-block-key="yjm7g">
+                            <b>Risk Disclosure:</b> Foreign Exchange (Forex, FX) and Contracts for Difference (CFDs) on
+                            Currencies, Commodities, Indices, or Equities are all margin-traded products and thus
+                            inherently carry a high-risk
+                            level that may not be suitable for all investors. Before deciding to trade FX/CFD
+                            instruments offered by Noor Capital PSC, you should carefully consider your objectives,
+                            financial situation, needs, and
+                            experience level. You should not trade any margined product unless you fully understand all
+                            the risks involved and possess sufficient resources in case of adverse movement in a
+                            product's price. You will then
+                            be able to meet the financial obligations required of you concerning margin payments and
+                            losses. See <a href="#" id="328" linktype="page">Risk Disclosure</a> for further
+                            details
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center py-5 copy-right_border">
+                <div class="text-[#ffffff] footer-screen-extra font-footer html-content">
+                    <p data-block-key="e2cqn"><a href="#">Noor Capital PSC</a> , Est. 2005. Regulated by the SCA in the
+                        UAE</p>
+                </div>
+            </div>
+        </div>
+               
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeElements = document.querySelectorAll(".fadeUp");
+
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("in-view");
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1,
+                }
+            );
+
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+    <script>
+        document.getElementById('backToTopBtn').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <script>
+        const stickyDiv = document.getElementById('stickyDiv');
+        const banner = document.getElementById('about-banner');
+
+        window.addEventListener('scroll', () => {
+            const bannerBottom = banner.offsetTop + banner.offsetHeight;
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition >= bannerBottom) {
+                stickyDiv.classList.add(
+                    'left-0',
+                    'right-0',
+                    'm-auto',
+                    'fixed',
+                    'z-[37]',
+                    '2xl:top-[40px]',
+                    'top-[30px]'
+                );
+            } else {
+                stickyDiv.classList.remove(
+                    'left-0',
+                    'right-0',
+                    'm-auto',
+                    'fixed',
+                    'z-[37]',
+                    '2xl:top-[40px]',
+                    'top-[30px]'
+                );
+            }
+        });
+    </script>
+    <script>
+        function initMobileNavToggle() {
+            const nav = document.querySelector(".nav-sm");
+            const openBtn = document.querySelector(".nav-sm-toggler");
+            const closeBtn = document.querySelector(".close_btn");
+
+            if (!nav || !openBtn || !closeBtn) return;
+
+            openBtn.addEventListener("click", () => {
+                nav.classList.remove("-right-full");
+                nav.classList.add("right-0");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                nav.classList.remove("right-0");
+                nav.classList.add("-right-full");
+            });
+        }
+    </script>
+
+    <!-- THEN your fetch script -->
+    <script>
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+                initMobileNavToggle();
+            });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".footer-swiper", {
+            speed: 1000,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 10,
+            slidesPerView: 3,
+
+        });
+    </script>
+
+</body>
+
+</html>

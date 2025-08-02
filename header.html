@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noorcapital</title>
+
+    <!-- Tailwind CSS CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (optional) -->
+    <link rel="stylesheet" href="./assets/style/header.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A56DB',
+                        secondary: '#F59E0B',
+                    },
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                    screens: {
+                        '2xl': '1545px' // You can change this value as needed
+                    },
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="sticky top-0 transition-[top] duration-300 z-40">
+        <div id="header-container">
+            <div id="top-header" class="bg-top sm:block hidden">
+                <div class="container">
+                    <div class="flex flex-row justify-between items-center gap-2 py-[13px] h-[30px] 2xl:h-[35px]">
+                        <div>
+                            <ul class="flex gap-7.5"></ul>
+                        </div>
+                        <div>
+                            <ul class="flex items-center h-[35]">
+                                <li class="top-banner-text top-myNoor">
+                                    <a target="_blank" href="#">MyNoor</a><span class="mx-3">|</span><a target="_blank"
+                                        href="#">Agents</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" bg-main-header transition-all duration-300 ">
+                <div class="container 2xl:py-5 py-3 ">
+                    <div class="flex justify-between items-center px-5 sm:px-0">
+                        <a class="flex items-center gap-1 logo_container" href="./index.html"><img
+                                src="./assets/img/noor-logo.png" class="shrink-0 mr-2" width="127" height="52"
+                                alt="img" /></a>
+                        <div class="flex items-center">
+                            <nav class="xl:block hidden">
+                                <ul class="flex items-center gap-[26px]  nav_list">
+                                    <li class="leading-[164%] relative group">
+                                        <a class="font-medium text-lg header-text group-hover:text-[#be811a] transition-all duration-500 py-4 2xl:py-5 flex items-center gap-3 desktop-nav-links"
+                                            href="#">
+                                            Company
+                                        </a>
+                                    </li>
+                                    <li class="leading-[164%] relative group">
+                                        <a class="font-medium text-lg header-text group-hover:text-[#be811a] transition-all duration-500 py-4 2xl:py-5 flex items-center gap-3 desktop-nav-links"
+                                            href="./contact.html">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                    <li class="leading-[164%] relative group nav-lg-dropdown">
+                                        <div
+                                            class="font-medium text-lg header-text group-hover:text-[#be811a] cursor-pointer transition-all duration-500 py-4 2xl:py-5 flex items-center gap-3 desktop-nav-links">
+                                            Services
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 448 512" class="text-sm" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="absolute 2xl:top-[97%] top-[90%] left-1/2 transform -translate-x-1/2 z-10 bg-transparent min-w-56 transition-all duration-500 opacity-0 translate-y-5 unset_opacity invisible">
+                                            <div
+                                                class="relative card-border menu-back-drop_filter h-full bg-[linear-gradient(90deg,_#8B3F1D50,_#21255950)] rounded-[20px] group/card layer-card overflow-hidden flex p-3">
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Global Financial Advisory
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Asset Management
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Investment Services
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Funds Administration
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="leading-[164%] relative group nav-lg-dropdown">
+                                        <div
+                                            class="font-medium text-lg header-text group-hover:text-[#be811a] cursor-pointer transition-all duration-500 py-4 2xl:py-5 flex items-center gap-3 desktop-nav-links">
+                                            Products
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 448 512" class="text-sm" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="absolute 2xl:top-[97%] top-[90%] left-1/2 transform -translate-x-1/2 z-10 bg-transparent min-w-56 transition-all duration-500 opacity-0 translate-y-5 unset_opacity invisible">
+                                            <div
+                                                class="relative card-border menu-back-drop_filter h-full bg-[linear-gradient(90deg,_#8B3F1D50,_#21255950)] rounded-[20px] group/card layer-card overflow-hidden flex p-3">
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Shares CFD
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Forex
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Indices
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Commodities
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Energies
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Crypto
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Cash Equities
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="leading-[164%] relative group nav-lg-dropdown">
+                                        <div
+                                            class="font-medium text-lg header-text group-hover:text-[#be811a] cursor-pointer transition-all duration-500 py-4 2xl:py-5 flex items-center gap-3 desktop-nav-links">
+                                            Trading
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 448 512" class="text-sm" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="absolute 2xl:top-[97%] top-[90%] left-1/2 transform -translate-x-1/2 z-10 bg-transparent min-w-56 transition-all duration-500 opacity-0 translate-y-5 unset_opacity invisible">
+                                            <div
+                                                class="relative card-border menu-back-drop_filter h-full bg-[linear-gradient(90deg,_#8B3F1D50,_#21255950)] rounded-[20px] group/card layer-card overflow-hidden flex p-3">
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                MT4 Platform
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                MT5 Platform
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                MT4 Web Trader
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                MT5 Web Trader
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                GTN Platform
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Account Funding
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Legal Documents
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Trading Condition
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Account Security
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="leading-[164%] relative group nav-lg-dropdown">
+                                        <div
+                                            class="font-medium text-lg header-text group-hover:text-[#be811a] cursor-pointer transition-all duration-500 py-4 2xl:py-5 flex items-center gap-3 desktop-nav-links">
+                                            Learning Hub
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 448 512" class="text-sm" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="absolute 2xl:top-[97%] top-[90%] left-1/2 transform -translate-x-1/2 z-10 bg-transparent min-w-56 transition-all duration-500 opacity-0 translate-y-5 unset_opacity invisible">
+                                            <div
+                                                class="relative card-border menu-back-drop_filter h-full bg-[linear-gradient(90deg,_#8B3F1D50,_#21255950)] rounded-[20px] group/card layer-card overflow-hidden flex p-3">
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <h1 class="px-5 font-semibold">Education</h1>
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Learn to invest
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Video Tutorials
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Webinars
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Workshop
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Noor Pedia
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <h1 class="px-5 font-semibold">News &amp; Events</h1>
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Market Updates
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Technical Analysis
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Economic Reports
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Economic Calendar
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Central Bank Rates
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <h1 class="px-5 font-semibold">Media Center</h1>
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Press Releases
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Activities
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Awards
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="leading-[164%] relative group nav-lg-dropdown">
+                                        <div
+                                            class="font-medium text-lg header-text group-hover:text-[#be811a] cursor-pointer transition-all duration-500 py-4 2xl:py-5 flex items-center gap-3 desktop-nav-links">
+                                            Partnership
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 448 512" class="text-sm" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="absolute 2xl:top-[97%] top-[90%] left-1/2 transform -translate-x-1/2 z-10 bg-transparent min-w-56 transition-all duration-500 opacity-0 translate-y-5 unset_opacity invisible">
+                                            <div
+                                                class="relative card-border menu-back-drop_filter h-full bg-[linear-gradient(90deg,_#8B3F1D50,_#21255950)] rounded-[20px] group/card layer-card overflow-hidden flex p-3">
+                                                <div class="gap-[15px] 2xl:gap-[15px] flex flex-col z-10">
+                                                    <ul
+                                                        class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[8px] 2xl:gap-[13px] bg-none">
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Institutional Liquidity Solutions
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Money Managers
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                Partnership Program
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                                href="#">
+                                                                White Label Solution
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="block xl:hidden">
+                                <div class="fixed left-0 top-0 w-full h-full bg-black/30 transition-all invisible">
+                                </div>
+                                <nav
+                                    class="bg-[#091830] border-l-2 border-l-[#be811a] w-full max-w-md min-h-screen h-full scrollbar-hiden overflow-y-auto p-7 shadow-md fixed -right-full top-0 z-50 transition-all duration-1000 ease-in-out nav-sm">
+                                    <div class="flex justify-between items-center">
+                                        <a class="flex items-center gap-1  logo_container" href="./index.html"><img
+                                                src="./assets/img/noor-logo.png" width="127" height="52"
+                                                alt="img" /></a>
+                                        <div
+                                            class="close_btn w-10 h-10 text-[#fff] flex items-center justify-center rounded-[4px] left-4">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 384 512" class="text-xl" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="mt-6">
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <a class="text-white text-[13px] py-2.5 border-b border-[#385469] flex justify-between items-center"
+                                                href="#"><span class="text-white">Company</span></a>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <a class="text-white text-[13px] py-2.5 border-b border-[#385469] flex justify-between items-center"
+                                                href="./contact.html"><span class="text-white">Contact Us</span></a>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <div
+                                                class="py-2.5 border-b border-[#385469] text-[13px] text-[#385469] flex justify-between items-center">
+                                                <span class="text-white">Services</span>
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <ul
+                                                class="min-w-56 w-full transition-all duration-500 max-h-0 overflow-hidden">
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Global Financial Advisory
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Asset Management
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Investment Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Funds Administration
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <div
+                                                class="py-2.5 border-b border-[#385469] text-[13px] text-[#385469] flex justify-between items-center">
+                                                <span class="text-white">Products</span>
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <ul
+                                                class="min-w-56 w-full transition-all duration-500 max-h-0 overflow-hidden">
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Shares CFD
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Forex
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">Indices</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Commodities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Energies
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">Crypto</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Cash Equities
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <div
+                                                class="py-2.5 border-b border-[#385469] text-[13px] text-[#385469] flex justify-between items-center">
+                                                <span class="text-white">Trading</span>
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <ul
+                                                class="min-w-56 w-full transition-all duration-500 max-h-0 overflow-hidden">
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        MT4 Platform
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        MT5 Platform
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        MT4 Web Trader
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        MT5 Web Trader
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        GTN Platform
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Account Funding
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Legal Documents
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Trading Condition
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Account Security
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <div
+                                                class="py-2.5 border-b border-[#385469] text-[13px] text-[#385469] flex justify-between items-center">
+                                                <span class="text-white">Learning Hub</span>
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <ul
+                                                class="min-w-56 w-full transition-all duration-500 max-h-0 overflow-hidden">
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Learn to invest
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Video Tutorials
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Webinars
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Workshop
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Noor Pedia
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Market Updates
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Technical Analysis
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Economic Reports
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Economic Calendar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Central Bank Rates
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Press Releases
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Activities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Awards
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <div
+                                                class="py-2.5 border-b border-[#385469] text-[13px] text-[#385469] flex justify-between items-center">
+                                                <span class="text-white">Partnership</span>
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <ul
+                                                class="min-w-56 w-full transition-all duration-500 max-h-0 overflow-hidden">
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Institutional Liquidity Solutions
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Money Managers
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        Partnership Program
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="#">
+                                                        White Label Solution
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-col gap-[17px] sm:hidden mt-[15px] mob_header_btn ">
+                                        <div class="nav-sm-btn-dropdown">
+                                            <button class="button_border_btn_46__eL52N border_btn_46" type="button">
+                                                <p>Try a Demo</p>
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.98821 0.103943L0.0537109 2.09727L5.68134 7.89605L11.309 2.09727L9.37448 0.103943L5.68134 3.90939L1.98821 0.103943Z"
+                                                        fill="white"></path>
+                                                </svg>
+                                            </button>
+                                            <ul
+                                                class="min-w-56 w-full transition-all duration-500 max-h-0 overflow-hidden">
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="en/trading/mt4-platform.html">
+                                                        FX Trading
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="en/trading/mt5-platform.html">
+                                                        MT5 - Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="en/trading/gtn-platform.html">
+                                                        GTN - Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="en/partnership/institutional-liquidity-solutions.html">
+                                                        Institutional Liquidity
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-sm-btn-dropdown">
+                                            <button class="button_fill_btn_46__iI1_A fill_btn_46" type="button">
+                                                <p>Open Live</p>
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.0945 0.103951L0.160004 2.09728L5.78764 7.89606L11.4153 2.09728L9.48077 0.103951L5.78764 3.9094L2.0945 0.103951Z"
+                                                        fill="#0C2E6D"></path>
+                                                </svg>
+                                            </button>
+                                            <ul
+                                                class="min-w-56 w-full transition-all duration-500 max-h-0 overflow-hidden">
+                                                <li>
+                                                    <a target="_blank"
+                                                        class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="https://mynoor.noorcap.ae/en/mynoor-v2/register">
+                                                        FX Trading
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="en/products/cash-equities.html">
+                                                        Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="en/trading/gtn-platform.html">
+                                                        GTN - Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-[#ffffff] text-[13px] hover:text-[#be811a] transition-all duration-500 py-2.5 px-6 block border-b border-[#385469]"
+                                                        href="en/partnership/institutional-liquidity-solutions.html">
+                                                        Institutional Liquidity
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <ul class="flex items-center h-[35]">
+                                            <li class="top-banner-text top-myNoor">
+                                                <a target="_blank"
+                                                    href="https://mynoor.noorcap.ae/en/traders/login">MyNoor</a><span
+                                                    class="mx-3">|</span><a target="_blank"
+                                                    href="https://agent.noorcap.ae/">Agents</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="flex items-center gap-4 header_btn">
+                                <div class="xl:ml-6 xxl:ml-8 cursor-pointer"></div>
+                                <div class="hidden sm:flex relative nav-lg-btn-dropdown">
+                                    <button class="button_border_btn_46__eL52N border_btn_46" type="button">
+                                        <p>Try a Demo</p>
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.98821 0.103943L0.0537109 2.09727L5.68134 7.89605L11.309 2.09727L9.37448 0.103943L5.68134 3.90939L1.98821 0.103943Z"
+                                                fill="white"></path>
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="absolute 2xl:top-[117%] top-[110%] left-1/2 transform -translate-x-1/2 z-10 bg-transparent min-w-56 transition-all duration-500 opacity-0 translate-y-5 unset_opacity invisible">
+                                        <div
+                                            class="relative card-border menu-back-drop_filter h-full bg-[linear-gradient(90deg,_#8B3F1D50,_#21255950)] rounded-[20px] group/card layer-card overflow-hidden flex p-3">
+                                            <ul
+                                                class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[13px] bg-none">
+                                                <li>
+                                                    <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        FX Trading
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        MT5 - Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        GTN - Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        Institutional Liquidity
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden sm:flex relative nav-lg-btn-dropdown">
+                                    <button class="button_fill_btn_46__iI1_A fill_btn_46" type="button">
+                                        <p>Open Live</p>
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.0945 0.103951L0.160004 2.09728L5.78764 7.89606L11.4153 2.09728L9.48077 0.103951L5.78764 3.9094L2.0945 0.103951Z"
+                                                fill="#0C2E6D"></path>
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="absolute 2xl:top-[117%] top-[110%] left-1/2 transform -translate-x-1/2 z-10 bg-transparent min-w-56 transition-all duration-500 opacity-0 translate-y-5 unset_opacity invisible">
+                                        <div
+                                            class="relative card-border menu-back-drop_filter h-full bg-[linear-gradient(90deg,_#8B3F1D50,_#21255950)] rounded-[20px] group/card layer-card overflow-hidden flex p-3">
+                                            <ul
+                                                class="2xl:top-[57%] top-[50%] z-10 min-w-60 flex flex-col gap-[13px] bg-none">
+                                                <li>
+                                                    <a target="_blank"
+                                                        class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        FX Trading
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        GTN - Cash Equities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="font-medium hover:text-[#fff] hover:bg-[linear-gradient(90deg,_#454EBD,_#CE6438)] text-nowrap transition-all duration-500 py-[10px] px-[20px] block rounded-[10px] text-white text-[14px] submenu_text"
+                                                        href="#">
+                                                        Institutional Liquidity
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex xl:hidden flex-col  items-end cursor-pointer transition-all duration-500 ease-in-out nav-sm-toggler">
+                                    <span class="block h-[3px] w-5 bg-white"></span>
+                                    <span class="block h-[3px] w-[30px] bg-white mt-2"></span>
+                                    <span class="block h-[3px] w-5 bg-white mt-2"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+</body>
+
+</html>
