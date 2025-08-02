@@ -2202,6 +2202,488 @@ p,a{
     }
 }
 
+/* top arrow */
+.card-sub-gradient:before {
+    background: linear-gradient(190deg, #be811a 15%, #edca7e 45%, #f4d48d 55%, #f4d081 66.72%, #f3b62e)
+}
+.back-to-top:before {
+    background: linear-gradient(222deg, #be811a 15%, #f4d48d 45%, #f4d48d 55%, #f3b62e 85%)
+}
+.animation-jumping {
+    animation-name: jumping;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: all .5ms
+}
+
+@keyframes jumping {
+    0% {
+        transform: translateY(-30%)
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+/* Products Table */
+.count-sub h2,
+.products-headings h5 {
+    color: #fff;
+    text-align: center;
+    font-style: normal
+}
+
+.products-headings h5 {
+    -webkit-text-stroke-width: .5;
+    -webkit-text-stroke-color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 142%;
+    letter-spacing: 1.36px;
+    text-transform: capitalize
+}
+
+.products-headings h1 {
+    text-align: center;
+    font-feature-settings: "liga" off;
+    font-family: Roboto;
+    font-size: 35px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 111%;
+    margin-top: 20px;
+    letter-spacing: unset !important
+}
+
+.rtl .products-headings h1 {
+    line-height: 130%
+}
+
+.products-headings {
+    max-width: 970px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.products-list li {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: nowrap
+}
+.products-list-wrapper {
+    overflow: auto
+}
+
+.products-list-wrapper::-webkit-scrollbar {
+    display: none
+}
+
+.product-tabs {
+    background-color: #101c30;
+    border-radius: 6px;
+    position: relative;
+    margin: 0;
+    z-index: 2
+}
+
+.product-tabs-container {
+    max-width: 1480px;
+    padding: 1px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    overflow: auto;
+    position: relative
+}
+
+.product-tabs:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 7px;
+    padding: 1px;
+    background: linear-gradient(270deg, #212559, #8b3f1d);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1
+}
+
+.product-tabs-container::-webkit-scrollbar {
+    display: none
+}
+
+.product-tabs a {
+    white-space: nowrap
+}
+
+.product-tabs-container {
+    max-width: calc(100vw - 40px)
+}
+.table_wrapper {
+    overflow: auto
+}
+
+.table_wrapper::-webkit-scrollbar {
+    display: none
+}
+.trading-tabs-span {
+    border-radius: 7px;
+    background: rgba(37, 37, 37, .25);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    position: relative;
+    padding: 10px
+}
+.trading-tabs-span:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 7px;
+    padding: 2px;
+    background: linear-gradient(270deg, #212559, #8b3f1d);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude
+}
+/* table */
+
+.investment_table_wrpper table th>p {
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    line-height: 19.98px;
+    letter-spacing: .26px;
+    font-weight: 500
+}
+
+.rtl .investment_table_wrpper table th>p {
+    text-align: right
+}
+
+.investment_table_wrpper table td>p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 300;
+    color: #fff
+}
+
+.investment_table_wrpper table td,
+.investment_table_wrpper table th {
+    padding: 22px 25px
+}
+
+.investment_table_wrpper table tr td:first-child,
+.investment_table_wrpper table tr th:first-child {
+    padding: 22px 25px 22px 65px
+}
+
+.investment_table_wrpper table tr td:last-child,
+.investment_table_wrpper table tr th:last-child {
+    padding: 22px 65px 22px 25px;
+    width: 169px
+}
+
+.investment_table_wrpper table tr td:last-child:after,
+.investment_table_wrpper table tr th:last-child:after {
+    width: calc(100% - 65px)
+}
+
+.investment_table_wrpper table td:first-child p,
+.investment_table_wrpper table th:first-child p {
+    margin-left: 25px
+}
+
+.rtl .investment_table_wrpper table tr td:first-child,
+.rtl .investment_table_wrpper table tr th:first-child {
+    padding: 22px 65px 22px 25px
+}
+
+.rtl .investment_table_wrpper table tr td:last-child,
+.rtl .investment_table_wrpper table tr th:last-child {
+    padding: 22px 25px 22px 65px;
+    width: 169px
+}
+
+.rtl .investment_table_wrpper table tr td:last-child:after,
+.rtl .investment_table_wrpper table tr th:last-child:after {
+    width: calc(100% - 65px)
+}
+
+.rtl .investment_table_wrpper table td:first-child p,
+.rtl .investment_table_wrpper table th:first-child p {
+    margin-right: 25px;
+    margin-left: auto
+}
+
+.investment_table_wrpper {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.investment_table_wrpper a,
+.investment_table_wrpper button {
+    min-width: 189px;
+    margin-right: 25px
+}
+
+.table_border_btn {
+    color: #a4a4a4;
+    padding: 13px 31px;
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500
+}
+
+.table_border_btn:hover {
+    background-image: linear-gradient(37deg, #be811a 16.39%, #bf8727 21.4%, #edca7e 49.58%, #f4d48d 56.49%, #f4d081 62.9%, #f3b62e 85.39%);
+    color: #0c2e6d;
+    font-weight: 700
+}
+
+.table_border_btn:after {
+    content: "";
+    border-radius: 5px;
+    border: 2px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(179.61deg, rgba(255, 240, 1, .4), rgba(248, 180, 17, .4) 25%, rgba(255, 240, 1, .4) 52.49999761581421%, rgba(248, 180, 17, .4) 78.50000262260437%, rgba(255, 240, 1, .4));
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: background-image .9s ease-in-out
+}
+
+.investment_table_wrpper table thead tr:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: .5px;
+    background-color: #222944
+}
+
+.investment-data-table-top {
+    display: flex;
+    margin-bottom: 12px
+}
+.table-td td {
+    position: relative
+}
+
+.table-td td:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+    background-color: #222944;
+    position: absolute;
+    bottom: 0
+}
+
+.table-td td:last-child:after {
+    width: 75%
+}
+.table-graph > div {
+    padding: 0 !important;
+}
+
+@media (min-width:640px) {
+    .product-tabs-container {
+        max-width: 630px
+    }
+}
+
+@media (min-width:769px) {
+    .product-tabs-container {
+        max-width: 759px
+    }
+}
+
+@media (min-width:1024px) {
+    .product-tabs-container {
+        max-width: 1015px
+    }
+}
+
+@media (min-width:1080px) {
+    .product-tabs-container {
+        max-width: 1070px
+    }
+}
+
+@media (min-width:1545px) {
+    .product-tabs-container {
+        max-width: 1480px
+    }
+}
+@media (max-width:1545px) {
+    .products-headings h1 {
+        font-size: 30px !important;
+        line-height: 111%
+    }
+    .rtl .products-headings h1 {
+        font-size: 30px !important;
+        line-height: 130%
+    }
+    .rtl .platform-new-heading h1 {
+        font-size: 35px
+    }
+    .products-headings {
+        max-width: 830px
+    }
+    .products-list li {
+        font-size: 13px;
+        line-height: normal
+    }
+     .products-headings h5 {
+        font-size: 14px;
+        line-height: normal
+    }
+     .trading-tabs-span {
+        padding: 6px
+    }
+    .trading-tabs-span:before {
+        padding: 1px
+    }
+     .investment_table_wrpper table th>p {
+        font-size: 15px;
+        line-height: 16.98px
+    }
+    .investment_table_wrpper table td>p {
+        font-size: 13px
+    }
+    .investment_table_wrpper table td,
+    .investment_table_wrpper table th {
+        padding: 17px
+    }
+    .investment_table_wrpper table tr td:first-child,
+    .investment_table_wrpper table tr th:first-child {
+        padding: 17px 17px 17px 50px
+    }
+    .investment_table_wrpper table tr td:last-child,
+    .investment_table_wrpper table tr th:last-child {
+        padding: 17px 55px 17px 17px;
+        width: 169px
+    }
+    .rtl .investment_table_wrpper table tr td:first-child,
+    .rtl .investment_table_wrpper table tr th:first-child {
+        padding: 17px 50px 17px 17px
+    }
+    .rtl .investment_table_wrpper table tr td:last-child,
+    .rtl .investment_table_wrpper table tr th:last-child {
+        padding: 17px 17px 17px 55px;
+        width: 169px
+    }
+    .investment-data-table-top .search_box input {
+        padding: 8px 15px 8px 38px;
+        font-size: 13px;
+        line-height: 16.98px
+    }
+    .investment-data-table-top .search_box {
+        height: 34px
+    }
+    .table_top_select .gradient-select>div:first-of-type {
+        height: 32px
+    }
+    .table_top_select .gradient-select>div:first-of-type>.css-hlgwow {
+        padding-block: 0;
+        font-size: 14px
+    }
+    .table_top_select .gradient-select .css-1wy0on6>div {
+        padding: 3px 8px
+    }
+     .investment_table_wrpper {
+        max-height: 388px
+    }
+    .top-cards-slide-desc,
+    .top-cards-slide-head {
+        font-size: 13px;
+        line-height: 17px
+    }
+    .table_border_btn {
+        font-size: 13px;
+        line-height: normal;
+        height: 34px
+    }
+    .investment_table_wrpper table td:first-child p,
+    .investment_table_wrpper table th:first-child p {
+        margin-left: 17px
+    }
+    .investment_table_wrpper .table_border_btn {
+        min-width: 145px;
+        margin-right: 17px
+    }
+    .investment_table_wrpper table tr td:last-child:after,
+    .investment_table_wrpper table tr th:last-child:after {
+        right: 50px
+    }
+    .investment_table_wrpper button {
+        min-width: 123px;
+        margin-right: 17px
+    }
+    .why_choose_col .bg-why-choose {
+        min-height: 271px
+    }
+    .investment_table_wrpper a,
+    .investment_table_wrpper button {
+        min-width: 123px
+    }
+}
+@media (max-width:1024px) {
+     .investment_table_wrpper table tr td:first-child,
+    .investment_table_wrpper table tr th:first-child {
+        padding: 17px
+    }
+    .investment_table_wrpper table tr td:last-child,
+    .investment_table_wrpper table tr th:last-child {
+        padding: 17px;
+        width: auto
+    }
+    .investment_table_wrpper table tr td:last-child:after,
+    .investment_table_wrpper table tr th:last-child:after {
+        right: 17px
+    }
+
+}
+@media (max-width:600px) {
+    .products-headings h1 {
+        font-size: 26px !important;
+        line-height: normal
+    }
+}
+@media (max-width:648px) {
+  .products-headings h1 {
+        font-size: 26px !important;
+        line-height: 111%
+    }
+    .rtl .products-headings h1 {
+        font-size: 26px !important;
+        line-height: 130%
+    }
+}
 
 /* Animations */
 .anim_delay_1 {
