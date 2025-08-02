@@ -2902,8 +2902,8 @@ p,a{
         .banner-fix-height,
     .banner-fix-height-ar {
         height: 55vh !important;
-        min-height: 322px;
-        max-height: 322px
+        min-height: 400px;
+        max-height: 400px
     }
 }
 @media (max-width:600px) {
