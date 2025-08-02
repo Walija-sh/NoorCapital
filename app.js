@@ -760,7 +760,861 @@ const initCanvas = (containerSelector = "canvas", strokeWidth = null) => {
   });
 };
 
+const topCardsData = {
+  popular: [
+    {
+      title: "US30",
+      value: "44567.15000",
+      image: "./assets/us30.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-blue-shade"
+    },
+    {
+      title: "DE30",
+      value: "21615.23000",
+      image: "./assets/de30.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-red-shade"
+    },
+    {
+      title: "WTI Oil",
+      value: "73.35100",
+      image: "./assets/wtiusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-blue-shade"
+    },
+    {
+      title: "Gold USD",
+      value: "2796.00000",
+      image: "./assets/goldusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-red-shade"
+    },
+    {
+      title: "Silver USD",
+      value: "31.30000",
+      image: "./assets/silverusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-blue-shade"
+    },
+    {
+      title: "EURUSD",
+      value: "1.03602",
+      image: "./assets/eurusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-red-shade"
+    },
+    {
+      title: "GBPUSD",
+      value: "1.23889",
+      image: "./assets/gbpusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-blue-shade"
+    },
+    {
+      title: "JPYUSD",
+      value: "155.04000",
+      image: "./assets/jpyusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-red-shade"
+    },
+    {
+      title: "BTCUSD",
+      value: "101485.00000",
+      image: "./assets/btcusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-blue-shade"
+    },
+    {
+      title: "ETHUSD",
+      value: "3308.70000",
+      image: "./assets/ethusd.png",
+      graphCanvas: { width: 92, height: 46, renderedWidth: 46, renderedHeight: 46 },
+      bgClass: "bg-red-shade"
+    }
+  ],
+  sharescfds: [
+  {
+    "title": "MSFT",
+    "value": "414.87000",
+    "image": "https://admin.noorcapital.ae/media/images/microsoft_png13_480.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "AAPL",
+    "value": "235.72500",
+    "image": "https://admin.noorcapital.ae/media/images/apple_logo_png19666_480.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "GOOGL",
+    "value": "203.95000",
+    "image": "https://admin.noorcapital.ae/media/images/google_png19630_720.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "META",
+    "value": "688.68500",
+    "image": "https://admin.noorcapital.ae/media/images/meta_png4_720.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "BABA",
+    "value": "98.64000",
+    "image": "https://admin.noorcapital.ae/media/images/alibaba_720.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "AMZN",
+    "value": "237.15000",
+    "image": "https://admin.noorcapital.ae/media/images/amazon_png4_360.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "NVDA",
+    "value": "119.89000",
+    "image": "https://admin.noorcapital.ae/media/images/nvidia-logo.wine_720.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "ADS",
+    "value": "253.66000",
+    "image": "https://admin.noorcapital.ae/media/images/adidas_png7_480.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "EBAY",
+    "value": "67.19000",
+    "image": "https://admin.noorcapital.ae/media/images/ebay_png2_480.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "KO",
+    "value": "63.31000",
+    "image": "https://admin.noorcapital.ae/media/images/cocacola_logo_png1.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  }
+],
+  forex: [
+  {
+    "title": "EURUSD",
+    "value": "1.03602",
+    "image": "https://admin.noorcapital.ae/media/images/eurusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "GBPUSD",
+    "value": "1.23889",
+    "image": "https://admin.noorcapital.ae/media/images/gbpusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "USDJPY",
+    "value": "155.04000",
+    "image": "https://admin.noorcapital.ae/media/images/jpyusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "USDCHF",
+    "value": "0.91042",
+    "image": "https://admin.noorcapital.ae/media/images/chfusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "NZDUSD",
+    "value": "0.56102",
+    "image": "https://admin.noorcapital.ae/media/images/nzdusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "USDCAD",
+    "value": "1.45338",
+    "image": "https://admin.noorcapital.ae/media/images/cadusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "EURJPY",
+    "value": "160.75100",
+    "image": "https://admin.noorcapital.ae/media/images/eurjpy.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "GBPJPY",
+    "value": "192.24400",
+    "image": "https://admin.noorcapital.ae/media/images/gbpjpy.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "AUDCAD",
+    "value": "0.90163",
+    "image": "https://admin.noorcapital.ae/media/images/audcad.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "AUDCHF",
+    "value": "0.56503",
+    "image": "https://admin.noorcapital.ae/media/images/audchf.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "AUDJPY",
+    "value": "96.22900",
+    "image": "https://admin.noorcapital.ae/media/images/audjpy.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "AUDNZD",
+    "value": "1.10102",
+    "image": "https://admin.noorcapital.ae/media/images/audnzd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "AUDUSD",
+    "value": "0.62020",
+    "image": "https://admin.noorcapital.ae/media/images/audusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "CADCHF",
+    "value": "0.62606",
+    "image": "https://admin.noorcapital.ae/media/images/cadchf.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "CADJPY",
+    "value": "106.70500",
+    "image": "https://admin.noorcapital.ae/media/images/cadjpy.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "CHFJPY",
+    "value": "170.16900",
+    "image": "https://admin.noorcapital.ae/media/images/chfjpy.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "EURAUD",
+    "value": "1.66808",
+    "image": "https://admin.noorcapital.ae/media/images/euraud.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  }
+],
+  commodities: [
+  {
+    "title": "Crude Oil WTI",
+    "value": "73.35100",
+    "image": "https://admin.noorcapital.ae/media/images/wti-crude-oil.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "Brent Oil",
+    "value": "76.22100",
+    "image": "https://admin.noorcapital.ae/media/images/brent-oil.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "Natural Gas",
+    "value": "3.05300",
+    "image": "https://admin.noorcapital.ae/media/images/naturalgas.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "Crude Oil WTI",
+    "value": "73.35100",
+    "image": "https://admin.noorcapital.ae/media/images/wti-crude-oil.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "Brent Oil",
+    "value": "76.22100",
+    "image": "https://admin.noorcapital.ae/media/images/brent-oil.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "Natural Gas",
+    "value": "3.05300",
+    "image": "https://admin.noorcapital.ae/media/images/naturalgas.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "Crude Oil WTI",
+    "value": "73.35100",
+    "image": "https://admin.noorcapital.ae/media/images/wti-crude-oil.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "Brent Oil",
+    "value": "76.22100",
+    "image": "https://admin.noorcapital.ae/media/images/brent-oil.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "Natural Gas",
+    "value": "3.05300",
+    "image": "https://admin.noorcapital.ae/media/images/naturalgas.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  }
+],
+  indices: [
+  {
+    "title": "DAX30",
+    "value": "21615.23000",
+    "image": "https://admin.noorcapital.ae/media/images/dax30.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "NASDAQ",
+    "value": "21463.65000",
+    "image": "https://admin.noorcapital.ae/media/images/nasdaq.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "Dow Jones",
+    "value": "44567.15000",
+    "image": "https://admin.noorcapital.ae/media/images/dowjones.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "S&P 500",
+    "value": "6039.29000",
+    "image": "https://admin.noorcapital.ae/media/images/sp500.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "FTSE",
+    "value": "8639.65000",
+    "image": "https://admin.noorcapital.ae/media/images/ftse.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "DAX30",
+    "value": "21615.23000",
+    "image": "https://admin.noorcapital.ae/media/images/dax30.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "NASDAQ",
+    "value": "21463.65000",
+    "image": "https://admin.noorcapital.ae/media/images/nasdaq.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "Dow Jones",
+    "value": "44567.15000",
+    "image": "https://admin.noorcapital.ae/media/images/dowjones.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "S&P 500",
+    "value": "6039.29000",
+    "image": "https://admin.noorcapital.ae/media/images/sp500.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "FTSE",
+    "value": "8639.65000",
+    "image": "https://admin.noorcapital.ae/media/images/ftse.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  }
+],
+  metals: [
+  {
+    "title": "WTI Oil",
+    "value": "73.35100",
+    "image": "https://admin.noorcapital.ae/media/images/wtiusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "Gold USD",
+    "value": "2796.00000",
+    "image": "https://admin.noorcapital.ae/media/images/goldusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "Silver USD",
+    "value": "31.30000",
+    "image": "https://admin.noorcapital.ae/media/images/silverusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "EURUSD",
+    "value": "1.03602",
+    "image": "https://admin.noorcapital.ae/media/images/eurusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "GBPUSD",
+    "value": "1.23889",
+    "image": "https://admin.noorcapital.ae/media/images/gbpusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "JPYUSD",
+    "value": "155.04000",
+    "image": "https://admin.noorcapital.ae/media/images/jpyusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "BTCUSD",
+    "value": "101485.00000",
+    "image": "https://admin.noorcapital.ae/media/images/btcusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "ETHUSD",
+    "value": "3308.70000",
+    "image": "https://admin.noorcapital.ae/media/images/ethusd.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  },
+  {
+    "title": "US30",
+    "value": "44567.15000",
+    "image": "https://admin.noorcapital.ae/media/images/us30.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-blue-shade"
+  },
+  {
+    "title": "DE30",
+    "value": "21615.23000",
+    "image": "https://admin.noorcapital.ae/media/images/de30.png",
+    "graphCanvas": {
+      "width": 92,
+      "height": 46,
+      "renderedWidth": 46,
+      "renderedHeight": 23
+    },
+    "bgClass": "bg-red-shade"
+  }
+]
+};
 
+  var Aboutswiper = new Swiper(".about-swiper-1", {
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 10,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1380: {
+        slidesPerView: 6,
+        spaceBetween: 10,
+      }
+    }
+  });
+function initTopCardTabs() {
+  const tabButtons = document.querySelectorAll(".trade-list li");
+  const swiperWrapper = document.querySelector(".about-swiper-1 .swiper-wrapper");
+
+  tabButtons.forEach((tabBtn, index) => {
+    tabBtn.addEventListener("click", () => {
+      tabButtons.forEach(btn => btn.classList.remove("bg-act", "text-[#fff]"));
+      tabBtn.classList.add("bg-act", "text-[#fff]");
+
+      const tabName = tabBtn.textContent.trim().toLowerCase().replace(/\s/g, '');
+      const data = topCardsData[tabName];
+      
+
+      swiperWrapper.innerHTML = "";
+
+      data.forEach(card => {
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+        slide.style.cssText = " max-width: 360px;";
+
+        slide.innerHTML = `
+          <div class="lg:p-2 sm:p-2 sm:py-0">
+            <div class="${card.bgClass} w-full rounded-[27px] ml-auto shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)] relative">
+              <div class="flex justify-between items-start relative z-10 2xl:min-h-[118px] min-h-[70px] pl-3 pt-3 2xl:pl-5 2xl:pt-5">
+                <div class="flex items-top gap-5">
+                  <div class="card-stock-logo">
+                    <img
+                      loading="lazy"
+                      width="60"
+                      height="60"
+                      decoding="async"
+                      class="lg:w-auto w-9"
+                      src="${card.image}"
+                      style="color: transparent;"
+                    />
+                  </div>
+                </div>
+                <div class="absolute right-0 z-[-1] w-[86px] h-[69px]">
+                  <div style="padding: 20px; border-radius: 10px;">
+                    <canvas role="img"
+                      width="${card.graphCanvas?.width || 92}"
+                      height="${card.graphCanvas?.height || 46}"
+                      style="display: block; box-sizing: border-box; width: ${card.graphCanvas?.renderedWidth || 46}px; height: ${card.graphCanvas?.renderedHeight || 46}px;">
+                    </canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between gap-5 pb-3 px-3 2xl:pb-5 2xl:px-5">
+                <div class="top-cards-slide-head"><div class="text-white">${card.title}</div></div>
+                <div class="top-cards-slide-desc"><div class="2xl:text-[16px] text-[13px] font-[500] md:leading-[140%] text-[white]">${card.value}</div></div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        swiperWrapper.appendChild(slide);
+        Aboutswiper.update(); 
+      });
+
+      
+ initCanvas('.about-swiper-1 canvas')
+
+    });
+  });
+
+   
+
+  tabButtons[0]?.click(); // trigger first tab click if exists
+
+}
 
 
 
@@ -774,4 +1628,5 @@ document.addEventListener("DOMContentLoaded", () => {
           renderTableRows("forex");
           initCanvas('.about-swiper-1 canvas')
           initCanvas('.investment_data_table canvas',strokeWidth=86)
+          initTopCardTabs()
 });
